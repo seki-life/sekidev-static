@@ -1,0 +1,5 @@
+baseURL = "http://seki.dev"
+languageCode = "en-us"
+title = "seki.dev"
+theme = "code-editor"
+locale = "en-us"
