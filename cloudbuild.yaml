@@ -1,9 +1,3 @@
 steps:
   - name: gcr.io/cloud-builders/gsutil
-  entrypoint: 'bash'
-  args:
-  - '-c'
-  - |
-    gcloud container images list-tags gcr.io/$PROJECT_ID/hugo --format=json > gcrimagelist.json
-    gcloud container images list-tags gcr.io/$PROJECT_ID/frbtools --format=json > gcrfrbimglist.json
-  id: 'check-images'
+    args: ['-m', 'rsync', '-a', 'public-read', '-r', '-c', '-d', './public', 'gs://www.seki.dev']
