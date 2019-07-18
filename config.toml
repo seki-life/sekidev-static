@@ -1,5 +1,25 @@
-baseURL = "http://seki.dev"
+baseURL = "https://seki.dev"
 languageCode = "en-us"
-title = "seki.dev"
-theme = "code-editor"
+title = "関.dev"
+theme = "m10c"
 locale = "en-us"
+
+copyright = "Copyright (c) 2019, Seki.life"
+canonifyurls = true
+paginate = 5
+
+[params]
+    author = "Seki.dev"
+    description = "The development devision of seki.life"
+    locale = "en-US"
+[[params.social]]
+    name = "github"
+    url = "https://github.com/seki-life"
+
+  # Brown theme
+  [params.style]
+    darkestColor = "#463625"
+    darkColor = "#2a3738"
+    primaryColor = "#eeee6a"
+    lightColor = "#96a879"
+    lightestColor = "#ffffff"

@@ -1,3 +1,0 @@
-steps:
-  - name: gcr.io/cloud-builders/gsutil
-    args: ['-m', 'rsync', '-a', 'public-read', '-r', '-c', '-d', './', 'gs://www.seki.dev']
